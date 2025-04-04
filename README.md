@@ -68,8 +68,8 @@ Modify your `assetlinks.json` file for deep linking:
    ```
 
 2. Enable Associated Domains in **Xcode**:
-    - Open **Xcode** → **Signing & Capabilities**.
-    - Add `applinks:app.yourdomain.com` in **Associated Domains**.
+   - Open **Xcode** → **Signing & Capabilities**.
+   - Add `applinks:app.yourdomain.com` in **Associated Domains**.
 
 ### 4. Handle Deep Links in Flutter
 Use `go_router` or `uni_links` package for handling deep links:
@@ -106,6 +106,8 @@ void initDeepLinks() {
 ```
 
 ## Testing
+- Use [Google Digital Asset Links Testing Tool](https://developers.google.com/digital-asset-links/tools/generator) to verify your asset links configuration.
+- Use `adb` to test deep links on Android:
 - Use `adb` to test deep links on Android:
   ```sh
   adb shell am start -a android.intent.action.VIEW -d "https://app.yourdomain.com/details" com.example.app
@@ -114,4 +116,3 @@ void initDeepLinks() {
 
 ## Conclusion
 This guide helps set up Firebase App Links using a custom domain in Flutter post Firebase Dynamic Links deprecation. This ensures seamless deep linking across Android and iOS.
-
