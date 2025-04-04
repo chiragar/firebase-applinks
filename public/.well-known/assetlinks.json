@@ -1,0 +1,14 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.example.firebasehostingdemo",
+            "sha256_cert_fingerprints": [
+                    "3E:C5:66:A7:2D:63:76:73:5E:F9:32:3D:B5:31:EA:45:EF:1F:6D:1E:97:3F:70:77:60:B0:57:26:A8:4B:DA:E3"
+            ]
+        }
+    }
+]
